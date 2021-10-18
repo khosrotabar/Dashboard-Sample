@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link href="CSS/Dashboard.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar p-0 navbar-dark fixed-top bg-dark shadow" style="z-index: 99;">
+            <div class="container-fluid p-0">
+                <div class="row h-100 w-100 px-0 mx-0">
+                    <div class="col-md-3 col-lg-2 p-0 flex-row d-flex">
+                        <a class="text-white w-100 height d-block text-nowrap border-0 px-3" href="#">Company name</a>
+                        <button class="navbar-toggler me-3 border-0" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseitems">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div class="col-md-7 col-lg-9 px-0 bg-color">
+                        <form action="#">
+                            <input type="search" class="w-100 px-3 search-another-css" aria-label="Search"
+                                placeholder="Search...">
+                        </form>
+                    </div>
+                    <div class="col-md-2 col-lg-1 p-0 bg-color">
+                        <a class="signout-hover border d-block border-0 w-100 height text-center text-nowrap text-muted"
+                            href="#">Sign out</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid p-0 collapse fixed-top collapse-padding-top shadow" id="collapseitems"
+            style="margin-top: 50px;z-index: 1;">
+            <div class="row h-100 w-100 px-0 mx-0">
+                <div class="col-9 px-0 bg-color">
+                    <form action="#">
+                        <input type="search" class="w-100 px-3 search-another-css" aria-label="Search"
+                            placeholder="Search...">
+                    </form>
+                </div>
+                <div class="col-3 p-0 bg-color">
+                    <a class="signout-hover border d-block border-0 w-100 height text-center text-nowrap text-muted"
+                        href="#">Sign out</a>
+                </div>
+                <div class="col-12 px-0 bg-light">
+                    <a href=" #" class="nav-link text-primary mx-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-home" style="color: #0d6efd;">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                        </svg>
+                        Dashboard
+                    </a>
+                    <a href="#" class="nav-link mx-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-file">
+                            <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
+                            <polyline points="13 2 13 9 20 9"></polyline>
+                        </svg>
+                        Orders
+                    </a>
+                    <a href="#" class="nav-link mx-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-shopping-cart">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                        Products
+                    </a>
+                    <a href="#" class="nav-link mx-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-users">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                        Customers
+                    </a>
+                    <a href="#" class="nav-link mx-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-bar-chart-2">
+                            <line x1="18" y1="20" x2="18" y2="10"></line>
+                            <line x1="12" y1="20" x2="12" y2="4"></line>
+                            <line x1="6" y1="20" x2="6" y2="14"></line>
+                        </svg>
+                        Reports
+                    </a>
+                    <a href="#" class="nav-link mx-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-layers">
+                            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                            <polyline points="2 17 12 22 22 17"></polyline>
+                            <polyline points="2 12 12 17 22 12"></polyline>
+                        </svg>
+                        Integration
+                    </a>
+                    <div class="container-fluid mt-3 ps-3 pe-2 d-flex justify-content-between align-items-center">
+                        <p class="text-muted text-uppercase my-2" style="font-size: 13px;font-weight: 500;">Saved
+                            reports</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" style="cursor: pointer;" width="14" height="14"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus-circle">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="12" y1="8" x2="12" y2="16"></line>
+                            <line x1="8" y1="12" x2="16" y2="12"></line>
+                        </svg>
+                    </div>
+                    <a href="#" class="nav-link mx-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-file-text">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                        Current month
+                    </a>
+                    <a href="#" class="nav-link mx-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-file-text">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                        Last quarter
+                    </a>
+                    <a href="#" class="nav-link mx-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-file-text">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                        Social engagemant
+                    </a>
+                    <a href="#" class="nav-link mx-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-file-text">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                        Year-end sell
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container-fluid">
+            <div class="row vh-100 overflow-hidden">
+                <div class="col-lg-2 col-md-3 p-0 bg-light sidebar-display-none">
+                    <div class="container-fluid px-0" style="margin-top: 70px;">
+                        <a href="#" class="nav-link text-primary mx-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-home" style="color: #0d6efd;">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                            </svg>
+                            Dashboard
+                        </a>
+                        <a href="#" class="nav-link mx-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-file">
+                                <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
+                                <polyline points="13 2 13 9 20 9"></polyline>
+                            </svg>
+                            Orders
+                        </a>
+                        <a href="#" class="nav-link mx-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-shopping-cart">
+                                <circle cx="9" cy="21" r="1"></circle>
+                                <circle cx="20" cy="21" r="1"></circle>
+                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                            </svg>
+                            Products
+                        </a>
+                        <a href="#" class="nav-link mx-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-users">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                            Customers
+                        </a>
+                        <a href="#" class="nav-link mx-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-bar-chart-2">
+                                <line x1="18" y1="20" x2="18" y2="10"></line>
+                                <line x1="12" y1="20" x2="12" y2="4"></line>
+                                <line x1="6" y1="20" x2="6" y2="14"></line>
+                            </svg>
+                            Reports
+                        </a>
+                        <a href="#" class="nav-link mx-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-layers">
+                                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                                <polyline points="2 17 12 22 22 17"></polyline>
+                                <polyline points="2 12 12 17 22 12"></polyline>
+                            </svg>
+                            Integration
+                        </a>
+                        <div class="container-fluid mt-3 ps-3 pe-2 d-flex justify-content-between align-items-center">
+                            <p class="text-muted text-uppercase my-2" style="font-size: 13px;font-weight: 500;">Saved
+                                reports</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" style="cursor: pointer;" width="14" height="14"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus-circle">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="12" y1="8" x2="12" y2="16"></line>
+                                <line x1="8" y1="12" x2="16" y2="12"></line>
+                            </svg>
+                        </div>
+                        <a href="#" class="nav-link mx-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-file-text">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                <polyline points="10 9 9 9 8 9"></polyline>
+                            </svg>
+                            Current month
+                        </a>
+                        <a href="#" class="nav-link mx-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-file-text">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                <polyline points="10 9 9 9 8 9"></polyline>
+                            </svg>
+                            Last quarter
+                        </a>
+                        <a href="#" class="nav-link mx-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-file-text">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                <polyline points="10 9 9 9 8 9"></polyline>
+                            </svg>
+                            Social engagemant
+                        </a>
+                        <a href="#" class="nav-link mx-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-file-text">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                <polyline points="10 9 9 9 8 9"></polyline>
+                            </svg>
+                            Year-end sell
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-10 col-md-9 overflow-auto h-100">
+                    <div class="container-fluid" style="margin-top: 80px;">
+                        <div
+                            class="container-fluid border-bottom border-muted pb-3 mx-0 px-0 d-flex justify-content-between align-items-center flex-row">
+                            <h2>Dashboard</h2>
+                            <div class="d-flex align-items-center">
+                                <div class="btn-group me-3">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+                                </div>
+                                <button
+                                    class="btn btn-sm btn-outline-secondary toolbar-toggler d-flex align-items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-calendar">
+                                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                                    </svg>
+                                    <p class="me-1 mb-0 p-0">This week</p>
+                                </button>
+                            </div>
+                        </div>
+                        <canvas class="my-4 w-100" id="myChart" width="1027" height="433"
+                            style="display: block; height: 347px; width: 822px;"></canvas>
+                        <div class="container-fluid px-0 mx-0">
+                            <section class="h2 pb-2 border-bottom border-muted my-0">Section title</section>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Header</th>
+                                        <th>Header</th>
+                                        <th>Header</th>
+                                        <th>Header</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1001</td>
+                                        <td>Lorem</td>
+                                        <td>ipsum</td>
+                                        <td>dolor</td>
+                                        <td>sit</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1001</td>
+                                        <td>Lorem</td>
+                                        <td>ipsum</td>
+                                        <td>dolor</td>
+                                        <td>sit</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1001</td>
+                                        <td>Lorem</td>
+                                        <td>ipsum</td>
+                                        <td>dolor</td>
+                                        <td>sit</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1001</td>
+                                        <td>Lorem</td>
+                                        <td>ipsum</td>
+                                        <td>dolor</td>
+                                        <td>sit</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1001</td>
+                                        <td>Lorem</td>
+                                        <td>ipsum</td>
+                                        <td>dolor</td>
+                                        <td>sit</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1001</td>
+                                        <td>Lorem</td>
+                                        <td>ipsum</td>
+                                        <td>dolor</td>
+                                        <td>sit</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1001</td>
+                                        <td>Lorem</td>
+                                        <td>ipsum</td>
+                                        <td>dolor</td>
+                                        <td>sit</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1001</td>
+                                        <td>Lorem</td>
+                                        <td>ipsum</td>
+                                        <td>dolor</td>
+                                        <td>sit</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1001</td>
+                                        <td>Lorem</td>
+                                        <td>ipsum</td>
+                                        <td>dolor</td>
+                                        <td>sit</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1001</td>
+                                        <td>Lorem</td>
+                                        <td>ipsum</td>
+                                        <td>dolor</td>
+                                        <td>sit</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1001</td>
+                                        <td>Lorem</td>
+                                        <td>ipsum</td>
+                                        <td>dolor</td>
+                                        <td>sit</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1001</td>
+                                        <td>Lorem</td>
+                                        <td>ipsum</td>
+                                        <td>dolor</td>
+                                        <td>sit</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1001</td>
+                                        <td>Lorem</td>
+                                        <td>ipsum</td>
+                                        <td>dolor</td>
+                                        <td>sit</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1001</td>
+                                        <td>Lorem</td>
+                                        <td>ipsum</td>
+                                        <td>dolor</td>
+                                        <td>sit</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1001</td>
+                                        <td>Lorem</td>
+                                        <td>ipsum</td>
+                                        <td>dolor</td>
+                                        <td>sit</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1001</td>
+                                        <td>Lorem</td>
+                                        <td>ipsum</td>
+                                        <td>dolor</td>
+                                        <td>sit</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="JS/Dashboard.js"></script>
+</body>
+
+</html>
